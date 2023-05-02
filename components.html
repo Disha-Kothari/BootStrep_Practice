@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <!-- Responsive -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="container"> <!--  which sets to center and allign with another content-->
+                <a class="navbar-brand" href="#">
+                    <img src="" width="30" height="30" alt="Bikadis" class="d-inline-block align-top">
+                    Bikadis Venture
+                </a>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Simple nav
+<nav>
+    <ul class="nav nav-pills bg-light">
+        <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Projects</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">contact us</a>
+        </li>
+    </ul>
+</nav> -->
+    </header>
+    <main role="main">
+        <div class="container my-5 p-5"> <!-- Emplty Skeleton-->
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" style="width: 50%;"
+                    role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+                    50%
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <nav class="my-3 ms-3">
+                <ol class="breadcrumb" style="--bs-breadcrumb-divider: '>';"> <!-- default divider  style is / -->
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Order</a></li>
+                    <li class="breadcrumb-item"><a href="#">Project</a></li>
+                    <li class="breadcrumb-item active"><a href="#">Contact us</a></li>
+                </ol>
+            </nav>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="" alt="small">
+                    <div class="card-body">
+                        <h5 class="card-title">design</h5>
+                        <p class="card-text">famous one</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn btn-primary">View Details</a></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="" alt="small">
+                    <div class="card-body">
+                        <h5 class="card-title">design</h5>
+                        <p class="card-text">famous one</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn btn-primary">View Details</a></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card rounded mb-4 shadow-sm">
+                    <img class="card-img-top" src="" alt="small">
+                    <div class="card-body">
+                        <h5 class="card-title">design</h5>
+                        <p class="card-text">famous one</p>
+                    </div>
+                    <div class="card-footer"><a href="#" class="btn btn-primary">View Details</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="" class="d-block w-100" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="shoppingCart"
+            aria-labelledby="shoppingCardLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Your Shopping Cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="responsive">
+                    <table class="table table-hover"></table>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="cancelmodal" tabindex="-1" aria-labelledby="cancelmodallabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Clear Basket</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure to clear your cart?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" data-bs-dismiss="modal"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- totast style horizonatally center at bottom of screen-->
+        <div class="toast poition-fixed bottom-0 start-50 translate-middle-x mb-3"></div>
+
+    </main>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
